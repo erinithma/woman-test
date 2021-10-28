@@ -257,6 +257,8 @@ p {
 .right {
     box-sizing: border-box;
     padding: 4vh 4vw;
+    background-image: url(./img/bg2.png);
+    background-size: 100% 100%;
 }
 
 .right p {
