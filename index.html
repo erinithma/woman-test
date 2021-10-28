@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div id="loading">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
     <section class="section section--start">
         <div class="main">
             <div class="main__logo">
@@ -18,8 +21,65 @@
             <h1>Погадай на короля</h1>
             <p>Современный специалист по любовной магии  Гала помогает людям обрести любовь в большом городе. Она разбирается в травах и заговорах, может видеть будущее в своем стеклянном шаре, а еще умеет гадать на картах. Узнайте больше о своем избраннике с помощью расклада от Галы. 
             </p>
-            <a href="" class="button">Погадать на короля</a>
+            <a href="javascript:start()" class="button">Погадать на короля</a>
+        </div>
+        <div class="social social--main">
+            <a href=""><img src="./img/vk.png"></a>
+            <a href=""><img src="./img/fb.png"></a>
+            <a href=""><img src="./img/ok.png"></a>
+            <a href=""><img src="./img/twitter.png"></a>
         </div>
     </section>
+    <section class="section main-block">
+        <div class="main-block__header">
+            <div><img src="./img/logo.png"></div>
+            <div class="main-block__header__logo2"><img src="./img/logo2.png"></div>
+            <div><img src="./img/header.svg"></div>
+        </div>
+        <div class="main-block__main">
+            <h2>Погадай на короля</h2>
+            <p>Пользователь может выбрать одного из четырех королей, который условно внешне напоминает любимого.
+            </p>
+        </div>
+        <div class="main-block__carts">
+            <div onclick="finish(0)"><img src="./img/1.png"></div>
+            <div onclick="finish(1)"><img src="./img/2.png"></div>
+            <div onclick="finish(2)"><img src="./img/3.png"></div>
+            <div onclick="finish(3)"><img src="./img/4.png"></div>
+        </div>
+    </section>
+    <section class="section main-block finish">
+        <div class="main-block__header">
+            <div><img src="./img/logo.png"></div>
+            <div class="main-block__header__logo2"><img src="./img/logo2.png"></div>
+            <div><img src="./img/header.svg"></div>
+        </div>
+        <div class="main-block__main">
+            <h2>Кто твой суженый?</h2>
+            <p>Пользователь может выбрать одного из четырех королей, который условно внешне напоминает любимого.
+            </p>
+        </div>
+        <div class="result">
+            <div class="left">
+                <img src="./img/1.png">
+            </div>
+            <div class="right">
+                <h2>Бубновый король</h2>
+                <div class="text">
+                    <p>Молодой человек с ангельским лицом и чертиками в глазах. Даже если с первого взгляда он кажется простым парнем, узнав его поближе, вы поймете, что он соткан из противоречий. Сегодня он зовет вас на свидание, а завтра уходит в себя, подолгу не отвечая на сообщения. И дело, скорее всего, не в вас, а в его эмоциональной нестабильности. Настроение бубнового короля так и скачет, как солнечный зайчик — то в тень, в задумчивое и мрачное состояние, то на свет — в приподнятое и веселое. Он искусный психолог, умеет разбираться в людях и нередко пользуется приемами манипуляций.
+                    </p>
+                </div>
+                <p>Если вы сумеете разгадать эту его особенность и научитесь считывать его намерения, то жизнь с ним вполне может сложиться ладной и складной. К тому же его любит удача, он умеет зарабатывать большие деньги, любит семью. Дом для него — полная чаша, в которой в изобилии должно быть всего и побольше, а рядом — жена-красавица.</p>
+                <div class="social">
+                    <a href=""><img src="./img/vk.png"></a>
+                    <a href=""><img src="./img/fb.png"></a>
+                    <a href=""><img src="./img/ok.png"></a>
+                    <a href=""><img src="./img/twitter.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script.js?r"></script>
 </body>
 </html>
