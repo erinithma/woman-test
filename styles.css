@@ -260,7 +260,7 @@ p {
 }
 
 .right p {
-    font-size: 2.1vh;
+    font-size: 2vh;
     width: 100%;
     margin: 2vh auto;
 }
@@ -269,6 +269,7 @@ p {
     display: flex;
     margin: 2vh auto;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .social a {
