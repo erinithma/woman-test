@@ -163,6 +163,9 @@ p {
         font-size: 2vh;
         padding: 2vh 4vw;
     }
+    .finish {
+        overflow-y: auto;
+    }
 }
 
 .main-block__header {
