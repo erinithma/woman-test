@@ -14,7 +14,8 @@ function scrollTo(selector) {
 }
 
 function start() {
-    scrollTo(".main-block")
+    scrollTo(".main-block");
+    $(".main-block").addClass("animated");
 }
 
 var text = [
@@ -45,6 +46,7 @@ function finish(index) {
     $(".left img").attr("src", "./img/" + (index + 1) + ".png");
     $(".right h2").text(titles[index]);
     $(".right .text").html(text[index]);
+    $(".finish").addClass("animated");
     scrollTo(".finish")
 }
 
@@ -60,6 +62,6 @@ var pr = img.map( (img) => new Promise( (res) => {
 } ))
 
 Promise.all(pr).then( () => {
-$("#loading").remove();
-   
+    $("#loading").remove();
+    $(".section--start").addClass("animated");
 })
