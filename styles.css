@@ -446,7 +446,7 @@ p {
 
 .animated .result {
     animation: finish 1s linear;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
