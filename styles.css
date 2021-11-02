@@ -150,7 +150,7 @@ p {
         bottom: 0;
         left: 0;
         background-image: url(./img/woman.jpg);
-        background-size: 100% auto;
+        background-size: auto 100%;
         background-position-x: right;
         background-position-y: bottom;
         background-repeat: no-repeat;
@@ -323,7 +323,7 @@ p {
 
 @media (max-width: 800px) {
     .main-block__main p{
-        width: 80vw;
+        width: 90vw;
     }
 
     .main-block__main {
@@ -332,6 +332,7 @@ p {
 
     .main-block__carts {
         grid-template-columns: repeat(2, 1fr);
+        width: 70vw;
     }
 
     .main-block__header img {

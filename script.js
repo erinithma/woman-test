@@ -14,7 +14,12 @@ function scrollTo(selector) {
 }
 
 function start() {
+    $(".main-block").show();
+    $(".finish").hide();
     scrollTo(".main-block");
+    setTimeout(function() {
+        $(".section--start").hide();
+    }, 500)
     $(".main-block").addClass("animated");
 }
 
@@ -53,7 +58,12 @@ function finish(index) {
     $(".right h2").text(titles[index]);
     $(".right .text").html(text[index]);
     $(".finish").addClass("animated");
+    
+    $(".finish").show();
     scrollTo(".finish")
+    setTimeout(function() {
+        $(".section--main").hide();
+    }, 500)
 }
 
 var img = [
