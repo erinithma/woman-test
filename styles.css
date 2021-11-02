@@ -33,6 +33,14 @@ body {
     height: 100vh;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box;
+    padding-bottom: 8vh;
+}
+
+@media (max-width: 800px) {
+    .section {
+        overflow-y: auto;
+    }
 }
 
 .section--start {
@@ -146,6 +154,11 @@ p {
         background-position-x: right;
         background-position-y: bottom;
         background-repeat: no-repeat;
+        z-index: 1;
+    }
+    .main {
+        z-index: 2;
+        position: relative;
     }
     .main__header img {
         height: 12vh;
@@ -362,9 +375,14 @@ p {
 
 .right {
     box-sizing: border-box;
-    padding: 4vh 2vw;
+    
+    
+}
+
+.right > div {
     background-image: url(./img/bg2.png);
     background-size: 100% 100%;
+    padding: 4vh 2vw;
 }
 
 .right p {
@@ -432,11 +450,18 @@ p {
 }
 
 @media (max-width: 800px) {
+    .right::after {
+       content: '';
+       height: 6vh;
+       width: 100%;
+       display: block;
+    }
     .result {
         background: none;
         flex-direction: column;
         border-radius: unset;
         box-shadow: none;
+        
     }
     .left {
         flex-basis: 80%;
@@ -445,14 +470,17 @@ p {
         position: relative;
         top: -4vh;
     }
-    .right {
+    .right > div {
         background: linear-gradient(0deg, rgba(244, 242, 230, 1), rgba(244, 242, 230, 1), rgba(255, 255, 255, 1));
         background-blend-mode: screen, normal;
         box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+    }
+
+    .right {
         position: absolute;
         top: 5vh;
         width: 80vw;
-        border-radius: 15px;
         color: #1B0336;
         font-size: 0.8vh;
     }
